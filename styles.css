@@ -1,3 +1,7 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%)
+}
+
 * {
     box-sizing: border-box
 }
@@ -6,10 +10,11 @@ html, body {
     margin: 0;
     min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-    border: 2px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 60vh;
@@ -25,19 +30,64 @@ html, body {
     border-radius: 20px 0 0 20px 
 }
 
+.perfume-span {
+    font-size: 1.1rem;
+    letter-spacing: 7px
+}
 
+.product-title {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem
+}
 
+.product-info {
+    padding: 2vw
+}
 
+.product-description {
+    font-size: 1.3rem;
+}
 
+.product-price {
+    display: flex;
+    align-items: center;
+}
 
+.sale-price {
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    font-size: 2.9rem;
+}
+.original-price {
+    text-decoration:line-through;
+    vertical-align:middle;
+    margin-left: 2vw
+}
 
+.atc-btn {
+    margin: 3vh 0 0 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 100%;
+    background-color: var(--dark-cyan);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem
+}
+
+.perfume-span, .product-description {
+    color: hsl(228, 12%, 48%);   
+}
 
 footer {
     position: fixed;
     bottom: 0
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
 
-.attribution a { color: hsl(228, 45%, 44%); }
-
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
