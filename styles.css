@@ -14,20 +14,31 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .container {
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr 1fr;
     min-height: 60vh;
     max-width: 40vw;
-    margin: 0 auto;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px
+    border-radius: 15px
 }
+
+.product-info {
+    padding: 1.7vw
+}
+
 
 .product-img {
     background-image: url('./images/image-product-desktop.jpg');
     background-size: cover;
-    border-radius: 20px 0 0 20px 
+    border-radius: 15px 0 0 15px 
 }
 
 .perfume-span {
@@ -36,46 +47,53 @@ html, body {
 }
 
 .product-title {
+    margin: 1.5vh 0 0 0 ;
     font-family: 'Fraunces', serif;
     font-size: 3rem
 }
 
-.product-info {
-    padding: 2vw
-}
-
 .product-description {
+    line-height: 3vh;
     font-size: 1.3rem;
+    margin: 2.5vh 0
 }
 
-.product-price {
-    display: flex;
-    align-items: center;
+.product-price span {
+    vertical-align: middle
 }
 
 .sale-price {
     font-family: 'Fraunces', serif;
     color: var(--dark-cyan);
-    font-size: 2.9rem;
+    font-size: 3rem;
 }
+
 .original-price {
-    text-decoration:line-through;
-    vertical-align:middle;
-    margin-left: 2vw
+    text-decoration: line-through;
+    margin-left: 1.5vw;
+    font-size:1.2rem;
 }
 
 .atc-btn {
-    margin: 3vh 0 0 0;
+    margin-top: 3.5vh;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    min-width: 100%;
     background-color: var(--dark-cyan);
     color: hsl(0, 0%, 100%);
     font-size: 1.2rem
 }
 
-.perfume-span, .product-description {
+.atc-btn:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer
+}
+
+svg {
+    margin-right: .5vw
+}
+
+.perfume-span, .product-description, .original-price {
     color: hsl(228, 12%, 48%);   
 }
 
@@ -90,4 +108,39 @@ footer {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 40rem) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .9fr;
+        max-width: 90vw;
+        max-height: 80vh;
+    }
+    .product-img {
+        background-image: url('./images/image-product-mobile.jpg');
+        border-radius: 10px 10px 0 0 
+    }
+
+    .product-title {
+        font-size: 2.4rem
+    }
+
+    .product-description {
+        font-size: 1.1rem;
+        line-height: 2.5vh
+    }
+
+    .perfume-span {
+        font-size: 1rem;
+       letter-spacing: 4px
+    }
+
+    .product-info {
+        padding: 1.5rem 1.7rem
+    }
+
+    .atc-btn {
+        margin: 2vh 0 0 0
+    }
 }

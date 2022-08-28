@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Preview](./images/desktop.png)
+![Mobile Preview](./images/mobile.png)
 
 ### Links
 
@@ -40,11 +41,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
 
 ### Continued development
 
@@ -53,7 +49,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Alex Contreras](https://alexurielcontreras.github.io/alex-website/)
+- Frontend Mentor - [@AlexUrielContreras](https://www.frontendmentor.io/profile/AlexUrielContreras)
+- Twitter - [@AUC829](https://twitter.com/AUC829)
 
